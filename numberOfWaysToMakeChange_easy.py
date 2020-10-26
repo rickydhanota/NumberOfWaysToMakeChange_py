@@ -17,4 +17,7 @@ def numberOfWaysToMakeChange(n, denoms):
                 ways[amount] += ways[amount - denom]
     return ways[n]
 
-print(numberOfWaysToMakeChange(6, [1, 5]))
+print(numberOfWaysToMakeChange(10, [1, 5, 10, 25]))
+#O(nd) time | O(n) space
+
+#Another example is n = 10 and denoms = [1, 5, 10, 25]
